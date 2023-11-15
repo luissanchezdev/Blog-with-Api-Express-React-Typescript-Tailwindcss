@@ -5,6 +5,7 @@ import Page404 from './pages/Page404'
 import Layout from './components/Layout'
 import Blog from './pages/Blog'
 import SingleBlog from './pages/SingleBlog'
+import Category from './pages/Category'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route index element={ <Home />}  />
           <Route path='blog' element={ <Blog /> } />
           <Route path='blog/:id' element={ <SingleBlog /> } />
+          <Route path='blog/category/:nameCategory' element={ <Category /> } />
           <Route path='*' element={ <Page404 /> } />
         </Route>
       </Routes>

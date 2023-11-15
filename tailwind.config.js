@@ -11,7 +11,7 @@ export default {
       },
       backgroundImage : {
         'hero-image': "url('./src/assets/img/hero-image.svg')",
-        'image-post-random': "url('https://picsum.photos/500')"
+        'image-post-random': "url('https://picsum.photos/1920/1080')"
       }
     },
   },
