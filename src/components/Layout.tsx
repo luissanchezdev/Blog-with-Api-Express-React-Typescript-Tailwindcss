@@ -1,18 +1,15 @@
-import React from 'react'
 import { Header, Footer } from './'
+import { Outlet } from 'react-router-dom'
 
-interface Props {
-  children: React.ReactNode
-}
-
-const Layout = ( { children } : Props ) => {
-
+const Layout = () => {
   return (
-    <>
+    <div className='App font-spaceGrotesk'>
       <Header />
-        { children }
+      <main className='container'>
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
     
   )
 }

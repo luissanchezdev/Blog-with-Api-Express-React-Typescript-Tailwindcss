@@ -1,6 +1,13 @@
-const Home = () => {
+import '../App.css'
+import { Hero, LatestPosts } from '../components'
+
+function Home() {
+
   return (
-    <div>Home</div>
+    <>
+      <Hero />
+      <LatestPosts />
+    </>
   )
 }
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
 
   const handleMenuMobile = () => {   
@@ -12,19 +14,19 @@ const Header = () => {
 
   return (
     <header className="flex flex-row justify-center items-center mx-auto py-5">
-        <a href="/" className="flex flex-row items-center w-full">
+        <Link to="/" className="flex flex-row items-center w-full">
           <h1 className="font-bold color-[#4d4d4d] text-sm md:text-xl uppercase w-4/5 text-left">Tech Blog</h1>
-        </a>
+        </Link>
         <nav className='menu hidden lg:block w-1/5 lg:w-full mx-auto'>
           <ul className="flex justify-end items-center gap-5 my-5">
             <li className="menu-items">
-              <a href="" className="menu-items-links text-lg">Home</a>
+              <Link to="/" className="menu-items-links text-lg">Home</Link>
             </li>
             <li className="menu-items">
-              <a href="" className="menu-items-links text-lg">Blog</a>
+              <Link to="/blog" className="menu-items-links text-lg">Blog</Link>
             </li>
             <li className="menu-items">
-              <a href="" className="menu-items-links text-lg">Contact</a>
+              <Link to="" className="menu-items-links text-lg">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -37,15 +39,15 @@ const Header = () => {
               </div>
               <div className="flex flex-col justify-start w-full h-full py-16 px-10">
                 <li className="menu-mobile-items">
-                  <a href="" className="menu-mobile-items-links">Home</a>
+                  <Link to="" className="menu-mobile-items-links">Home</Link>
                 </li>
                 <li className="menu-mobile-items">
-                  <a href="" className="menu-mobile-items-links">Blog</a>
+                  <Link to="" className="menu-mobile-items-links">Blog</Link>
                 </li>
               </div>
               <div className="flex flex-col justify-end w-full h-full py-16 px-10">
                 <li className="w-full text-left py-3s">
-                  <a href="" className="text-[#2d2d2d] text-xl font-bold py-2 px-5 inline-block bg-white w-full">Contact</a>
+                  <Link to="" className="text-[#2d2d2d] text-xl font-bold py-2 px-5 inline-block bg-white w-full">Contact</Link>
                 </li>
               </div>
             </ul>
