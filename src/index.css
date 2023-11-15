@@ -3,3 +3,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-items-links {
+    @apply inline-block hover:underline w-full cursor-pointer;
+}
+
+.menu-mobile-items {
+    @apply w-full text-left py-3 border-b-2 border-gray-300;
+}
+
+.menu-mobile-items-links {
+    @apply text-white text-2xl
+}
+
+.hero {
+    @apply  py-5 flex flex-col justify-between items-center;
+}
+
+.hero-image {
+    @apply pt-5 md:h-[350px]  2xl:h-[500px]
+}
+
+.hero-title {
+    @apply text-4xl font-medium py-5;
+}
+
+.hero-description {
+    @apply text-sm lg:text-lg font-bold text-gray-600;
+}
+
+.latest-posts-title {
+    @apply text-3xl p-10;
+}
+
+.latest-posts-grid {
+    @apply grid md:grid-cols-3 gap-5;
+}
+
+.grid-post {
+    @apply p-4 border-4 shadow-2xl rounded-xl flex flex-col justify-center items-center;
+}
+
+.grid-post-image {
+    @apply rounded-md my-2;
+}
+
+.grid-post-title {
+    @apply text-xl font-bold py-2;
+}
+
+.grid-post-description {
+    @apply text-lg font-medium;
+}
+
+.grid-post-link {
+    @apply text-green-800 text-lg font-bold;
+}
+
+.footer {
+    @apply mt-16;
+}

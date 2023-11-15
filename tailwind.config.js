@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif']
+      },
+      backgroundImage : {
+        'hero-image': "url('./src/assets/img/hero-image.svg')"
       }
     },
   },
